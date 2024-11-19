@@ -6,7 +6,7 @@
 
 #### 1.3 `main.py`：功能调用
 
-#### 1.3 `PointCloud.py` ：自定义的点云操作函数
+#### 1.4 `PointCloud.py` ：自定义的点云操作函数
 
 - `getPointsObject`：获取点云对象；
 - `countPoints`：计算点的数量；
