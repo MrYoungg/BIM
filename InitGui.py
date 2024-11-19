@@ -29,25 +29,23 @@ import FreeCAD as App
 import FreeCADGui as Gui
 
 
-class YYDIYWorkbench(Gui.Workbench):
+class PointCloudWorkbench(Gui.Workbench):
     """Surface workbench object."""
 
     # 找到对应的图标
     Icon = os.path.join(App.getResourceDir(),
-                        "Mod", "Surface",
-                        "Resources", "icons", "Surface_Workbench.svg")
+                        "Mod", "Points",
+                        "Resources", "icons", "PointsWorkbench.svg")
     # 在FreeCAD工具台列表中显示的名字
-    MenuText = "YYDIY"
+    MenuText = "PointCloud"
     # 在FreeCAD工具台列表中显示的详情
-    ToolTip = "YYDIY workbench: DIY from YY"
+    ToolTip = "PointCloud workbench: deal with point cloud"
 
     def Initialize(self):
         """Initialize the module."""
-        import Surface
-        import SurfaceGui
-
+        
     def GetClassName(self):
         return "Gui::PythonWorkbench"
 
 
-Gui.addWorkbench(YYDIYWorkbench())
+Gui.addWorkbench(PointCloudWorkbench())
